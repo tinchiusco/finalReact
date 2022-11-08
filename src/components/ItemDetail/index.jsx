@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './styles.css'
 
-const ItemDetail = () => {
+const ItemDetail = ({character}) => {
   return (
-    <h1>Detalle del producto</h1>
+    <div className='item-box'>
+      <img src={character.image} alt="qwer" width={450} />
+      <h1>{character.name}</h1>
+    </div>
   )
 }
 

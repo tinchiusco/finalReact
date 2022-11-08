@@ -3,6 +3,7 @@ import './styles.css';
 
 import ItemList from '../../components/ItemList';
 import { useParams } from 'react-router-dom';
+import { ClimbingBoxLoader } from 'react-spinners';
 
 export default function ItemListContainer () {
 
@@ -33,7 +34,7 @@ export default function ItemListContainer () {
 
     return (
         <>
-            <ItemList products={products}/>
+           {products.length ? <ItemList products={products}/> : <ClimbingBoxLoader/>}
         </>
     )
 }

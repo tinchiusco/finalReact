@@ -1,0 +1,7 @@
+.item.box{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

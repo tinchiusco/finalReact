@@ -1,0 +1,9 @@
+.img-box {
+    border-radius: 10px;
+}
+
+.item-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
