@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles.css'
 
-const ItemDetail = ({character}) => {
+const ItemDetail = ({game}) => {
   return (
     <div className='item-box'>
-      <img src={character.image} alt="qwer" width={450} />
-      <h1>{character.name}</h1>
+      <img src={game.background_image} alt= {game.name} width={450} />
+      <h1>{game.name}</h1>
     </div>
   )
 }

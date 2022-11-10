@@ -1,0 +1,6 @@
+.bg-video{
+   position: absolute;
+   z-index: -1;
+   width: 100vw;
+   background-repeat: initial;
+}

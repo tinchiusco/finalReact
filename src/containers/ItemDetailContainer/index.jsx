@@ -8,22 +8,22 @@ import { ClimbingBoxLoader } from "react-spinners";
 const ItemDetailContainer = () => {
 
   const{id} = useParams()
-  const [character, setCharacter] = useState(null)
+  const [game, setGame] = useState(null)
 
   
     useEffect(() => {
       
-      const getCharacterDetail = async () => {
+      const getGameDetail = async () => {
      // hacer el fetch del detalle del producto
-     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
-     const character = await response.json();
-     setCharacter(character)
+     const response = await fetch(`https://api.rawg.io/api/games/${id}?key=4f98277da46b42b8b85a54b79f5ad1a9`);
+     const game = await response.json();
+     setGame(game);
       }
-    getCharacterDetail();
+    getGameDetail();
     }, [id]);
     
   return (
-   character ? <ItemDetail character={character}/> : <ClimbingBoxLoader/>
+   game ? <ItemDetail game={game}/> : <ClimbingBoxLoader/>
   )
 }
 

@@ -7,7 +7,7 @@ const Root = () => {
     <>
     <NavBar/>
     <Outlet/>
-    <h2>Hola soy un Footer desde el ROOT</h2>
+    
     </>
   )
 }

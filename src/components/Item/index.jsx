@@ -12,9 +12,12 @@ const Item = ({product}) => {
   }
   return (
     <div className='item-box' onClick = {navigateDetail}>
-      <img className='img-box' src={product.image} alt="character"/>
-      <p key = { product.id }>{product.name}, stock: {99}</p>
-      
+      <img className='img-box' src={product.background_image} alt={product.name}/>
+      <div>
+      <p className='text-style' key = { product.id }>{product.name}</p>
+      <p>Stock: {99}</p>
+      <p>Critic: {product.metacritic}</p>
+      </div>
     </div>
   )
 }

@@ -1,9 +1,29 @@
-.img-box {
-    border-radius: 10px;
-}
+
 
 .item-box {
+    border: solid rgb(109, 30, 109) 3px;
+    background-color: rgba(32, 32, 32, 0.904);
+    width: 280px;
+    height: 350px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.img-box {
+    border-radius: 10px;
+    width: 270px;
+    justify-content: center;
+    align-self: center;
+}
+
+p {
+    color: rgb(223, 217, 217);
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
