@@ -3,7 +3,8 @@ import ItemDetail from '../../components/ItemDetail';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-import { ClimbingBoxLoader } from "react-spinners"; 
+
+import Loader from '../../components/Loader';
 
 const ItemDetailContainer = () => {
 
@@ -23,7 +24,7 @@ const ItemDetailContainer = () => {
     }, [id]);
     
   return (
-   game ? <ItemDetail game={game}/> : <ClimbingBoxLoader/>
+   game ? <ItemDetail game={game} description= {game.description}/> : <Loader/>
   )
 }
 

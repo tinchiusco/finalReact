@@ -2,8 +2,9 @@ import React, {useEffect, useState} from 'react';
 import './styles.css';
 import ItemList from '../../components/ItemList';
 import { useParams } from 'react-router-dom';
-import { ClimbingBoxLoader } from 'react-spinners';
+
 import VideoBg from '../../components/VideoBg';
+import Loader from '../../components/Loader';
 
 export default function ItemListContainer () {
 
@@ -40,7 +41,7 @@ export default function ItemListContainer () {
     return (
         <>
             <VideoBg/>
-           {products.length ? <ItemList products={products}/> : <ClimbingBoxLoader/>}
+           {products.length ? <ItemList products={products}/> : <Loader/>}
            
         </>
     )
