@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
     }, [id]);
     
   return (
-   game ? <ItemDetail game={game} description= {game.description}/> : <Loader/>
+   game ? <ItemDetail game={game}/> : <Loader/>
   )
 }
 
