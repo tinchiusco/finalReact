@@ -12,7 +12,7 @@ const ItemCount = ({onAdd, stock, initial}) => {
     const onDecrement = () => {
         if (count > initial) setCount(count - 1)
     }
-    return <div>
+    return <div className="quantityButton">
         <button onClick={onDecrement}>-</button>
         <span>{count}</span>
         <button onClick={onPlus}>+</button>

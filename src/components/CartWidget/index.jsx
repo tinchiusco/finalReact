@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Shop } from '../../context/Shop';
@@ -26,9 +26,9 @@ const {totalItemsCart} = useContext(Shop);
     onClick={() => navigate("/cart")}>
 
         <CartIcon/>
-    {/* <span>{totalItemsCart() === 0 ? null : `(${totalItemsCart()})`}</span> */}
+    <span>{totalItemsCart() === 0 ? null : `(${totalItemsCart()})`}</span>
     </div>
   )
 }
 
-export default CartWidget
+export default CartWidget */
